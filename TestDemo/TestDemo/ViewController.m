@@ -128,10 +128,26 @@
     [self.view addSubview:picture];
     
     
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ChangeNameNotification:) name:@"ChangeNameNotification" object:nil];
+
     
     
 }
 
+-(void) viewDidUnload
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super viewDidUnload];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark 首尾动画
 //另外一种动画实现方法测试。 不同于使用块方法。
 -(void) otherAnimation:(UIButton *)btn
 {
@@ -149,10 +165,6 @@
      [UIView commitAnimations];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void) NSStringDemo
 {
@@ -266,6 +278,7 @@
 }
 
 
+#pragma mark 跳转测试
 -(void)PictureEnterViewController
 {
  
@@ -302,6 +315,7 @@
 }
 
 //2015-8-25
+#pragma mark 动画
 -(void)animationDidStart:(CAAnimation *)anim
 {
     NSLog(@"开始动画");
@@ -320,6 +334,7 @@
  *  执行segue后,跳转之前会调用这个方法
  *  一般在这里给下一个控制器传递数据
  */
+#pragma mark 传递值测试
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 // 1.取得目标控制器()
@@ -328,9 +343,16 @@
 //    contactVc.title = [NSString stringWithFormat:@"传递数据到B页面了"];
     id vc = segue.destinationViewController;
     // 设置下一个控制器(添加联系人的控制器)的代理
+//    直接传值方式
     PassValueViewController *addVc = vc;
     addVc.title = @"传递到B页面了";
+//    代理回调传值方式
     addVc.delegate = self;
+//    块传值方式
+    addVc.block = ^(NSString *str)
+    {
+        self.retrunValue.text = str;
+    };
     self.title = @"A页面";
 }
 -(void)returnValueforBcontroller:(NSString *)returnValue
@@ -339,6 +361,11 @@
 }
 //2015-8-25
 
+-(void)ChangeNameNotification:(NSNotification*)notification{
+    
+    NSDictionary *nameDictionary = [notification userInfo];
+    self.retrunValue.text = [nameDictionary objectForKey:@"name"];
+}
 
 
 @end

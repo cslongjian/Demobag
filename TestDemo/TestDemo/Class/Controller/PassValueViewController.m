@@ -29,8 +29,23 @@
     // 2.传递数据给上一个控制器()
     // 2.通知代理
     if ([self.delegate respondsToSelector:@selector(returnValueforBcontroller:)]) {
-        [self.delegate returnValueforBcontroller:@"数据回到A页面了"];
+        [self.delegate returnValueforBcontroller:self.returnValue.text];
     }
+}
+- (IBAction)notificationMethod:(id)sender {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ChangeNameNotification" object:self userInfo:@{@"name":self.returnValue.text}];
+}
+- (IBAction)blockreturnMethod:(id)sender {
+    if (self.block) {
+        self.block(self.returnValue.text);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+    //这个因为不是MODLE方式出来的无法调用
+//    [self presentViewController:nil animated:yes completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
 }
 
 /*

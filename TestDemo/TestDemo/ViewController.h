@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *customView;
+@property (weak, nonatomic) IBOutlet UILabel *retrunValue;
 
 
 @end

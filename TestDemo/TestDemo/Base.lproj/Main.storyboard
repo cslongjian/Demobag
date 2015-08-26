@@ -45,21 +45,30 @@
                                     <segue destination="RQj-EI-a5U" kind="push" id="ED4-Zf-MhO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回传的显示位置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pc-ph-X07" userLabel="测试内容">
+                                <rect key="frame" x="240" y="200" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="a3V-l2-Dxa" secondAttribute="centerY" id="6c5-kt-5CM"/>
+                            <constraint firstAttribute="centerX" secondItem="7Pc-ph-X07" secondAttribute="centerX" id="7Cq-bX-mxt"/>
+                            <constraint firstItem="7Pc-ph-X07" firstAttribute="top" secondItem="efB-1y-jza" secondAttribute="top" constant="200" id="R1T-NF-8MS"/>
                             <constraint firstAttribute="centerX" secondItem="a3V-l2-Dxa" secondAttribute="centerX" id="jGs-fv-K1a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Uk-kn-ka2"/>
                     <connections>
                         <outlet property="customView" destination="wQU-EC-M2R" id="HY8-HB-cyr"/>
+                        <outlet property="retrunValue" destination="7Pc-ph-X07" id="jkI-UY-4bP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVq-az-dCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="687"/>
+            <point key="canvasLocation" x="1449" y="780"/>
         </scene>
         <!--Pass Value View Controller-->
         <scene sceneID="gxd-G3-DVh">
@@ -74,22 +83,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caF-EN-KK3">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="协议回传">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="returnTOAController:" destination="RQj-EI-a5U" eventType="touchUpInside" id="ikf-cZ-vqi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpR-3v-I3V">
+                                <rect key="frame" x="16" y="285" width="60" height="30"/>
+                                <state key="normal" title="广播回传">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notificationMethod:" destination="RQj-EI-a5U" eventType="touchUpInside" id="oKy-13-MGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oZ-ex-Bs3">
+                                <rect key="frame" x="539" y="285" width="45" height="30"/>
+                                <state key="normal" title="块回传">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blockreturnMethod:" destination="RQj-EI-a5U" eventType="touchUpInside" id="3JQ-wl-Bah"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfg-5w-OzN">
+                                <rect key="frame" x="191" y="158" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="gtI-D3-l1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="caF-EN-KK3" secondAttribute="centerX" id="4qO-nx-OWz"/>
+                            <constraint firstItem="dfg-5w-OzN" firstAttribute="top" secondItem="E8k-Vd-nqT" secondAttribute="bottom" constant="94" id="75U-Fb-WtY"/>
+                            <constraint firstAttribute="trailing" secondItem="5oZ-ex-Bs3" secondAttribute="trailing" constant="16" id="D6k-RA-zRJ"/>
                             <constraint firstAttribute="centerY" secondItem="caF-EN-KK3" secondAttribute="centerY" id="Rs1-1y-f4v"/>
+                            <constraint firstItem="VpR-3v-I3V" firstAttribute="leading" secondItem="Mb4-Eb-qi1" secondAttribute="leading" constant="16" id="ZOm-zk-Qo4"/>
+                            <constraint firstAttribute="centerY" secondItem="5oZ-ex-Bs3" secondAttribute="centerY" id="gLv-Jp-X5h"/>
+                            <constraint firstAttribute="centerY" secondItem="VpR-3v-I3V" secondAttribute="centerY" id="ooT-sj-0aV"/>
+                            <constraint firstAttribute="centerX" secondItem="dfg-5w-OzN" secondAttribute="centerX" id="tRv-ey-v6p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MKc-3T-6hO"/>
+                    <connections>
+                        <outlet property="returnValue" destination="dfg-5w-OzN" id="yia-0d-UmG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PL4-4A-zvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

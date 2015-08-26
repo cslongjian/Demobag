@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @protocol RetrunControllerDelegate <NSObject>
-
-
 @optional
 //- (void)addViewController:(MJAddViewController *)addVc didAddContactWithName:(NSString *)name phone:(NSString *)phone;
 - (void)returnValueforBcontroller:(NSString *) returnValue;
 @end
-@interface PassValueViewController : UIViewController
+typedef void(^ABlock)(NSString *str);
 
+@interface PassValueViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *returnValue;
 @property (nonatomic, weak) id<RetrunControllerDelegate> delegate;
+@property (nonatomic,copy) ABlock block;
 
 @end
