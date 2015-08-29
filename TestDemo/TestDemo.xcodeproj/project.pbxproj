@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258F25691B91FCD600EA531F /* SingleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 258F25681B91FCD600EA531F /* SingleClass.m */; };
 		DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */; };
 		DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48271B8CBF650073C9DF /* PassValueViewController.m */; };
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		258F25671B91FCD600EA531F /* SingleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleClass.h; sourceTree = "<group>"; };
+		258F25681B91FCD600EA531F /* SingleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleClass.m; sourceTree = "<group>"; };
 		DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatepickerViewController.h; sourceTree = "<group>"; };
 		DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatepickerViewController.m; sourceTree = "<group>"; };
 		DE6F48261B8CBF650073C9DF /* PassValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueViewController.h; sourceTree = "<group>"; };
@@ -130,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		258F25661B91FCB000EA531F /* SingleInstance */ = {
+			isa = PBXGroup;
+			children = (
+				258F25671B91FCD600EA531F /* SingleClass.h */,
+				258F25681B91FCD600EA531F /* SingleClass.m */,
+			);
+			name = SingleInstance;
+			sourceTree = "<group>";
+		};
 		DE8C6B8B1B9194720011DF6B /* DataTransmission */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 		DEE67C631B7CD90000F93DA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				258F25661B91FCB000EA531F /* SingleInstance */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -423,6 +436,7 @@
 				DEE67CA51B81D1FA00F93DA7 /* UIView+WebCacheOperation.m in Sources */,
 				DEE67C9F1B81D1FA00F93DA7 /* UIButton+WebCache.m in Sources */,
 				DEE67CA11B81D1FA00F93DA7 /* UIImage+MultiFormat.m in Sources */,
+				258F25691B91FCD600EA531F /* SingleClass.m in Sources */,
 				DEE6D8841B78E0B3002129F7 /* AppDelegate.m in Sources */,
 				DEE67C9C1B81D1FA00F93DA7 /* SDWebImageDownloaderOperation.m in Sources */,
 				DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //2015-8-25
 
 #import "PassValueViewController.h"
+#import "SingleClass.h"
 
 @interface PassValueViewController ()
 
@@ -66,6 +67,14 @@
     }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+//6使用单例传递数据
+- (IBAction)singleInstanceMethod:(id)sender {
+    SingleClass *singleInatance = [SingleClass sharedSingleClass];
+    singleInatance.name = self.returnValue.text;
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 /*
 #pragma mark - Navigation

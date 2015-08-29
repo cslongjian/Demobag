@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BD2BA08A-E9F4-47D7-9ABF-BF6037E823BC</string>
+	<string>A6A757F2-5783-4C5E-96A1-56EA45BE2B8B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TestDemo</string>
+	<string>Tager</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E7DF6032737D59049726F125D5E518B6ECE4169E</key>
 		<string>https://github.com/chenlongjian/Demobag.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TestDemo/TestDemo.xcodeproj</string>
+	<string>Tager/Tager.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E7DF6032737D59049726F125D5E518B6ECE4169E</key>

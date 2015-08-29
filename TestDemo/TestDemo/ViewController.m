@@ -12,6 +12,7 @@
 #import "UIScrollViewController.h"
 #import "DatepickerViewController.h"
 #import "PassValueViewController.h"
+#import "SingleClass.h"
 
 #import "StartUIView.h"
 
@@ -145,8 +146,14 @@
 {
     [super viewWillAppear:animated];
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"] length] != 0) {
-        self.retrunValue.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"];
+        self.userDefalueValue.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"];
     }
+    
+    SingleClass *singleInatance = [SingleClass sharedSingleClass];
+    if ([singleInatance.name length] != 0 ) {
+        self.singleInstanceValue.text = singleInatance.name;
+
+    }    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -351,24 +358,24 @@
 //    contactVc.title = [NSString stringWithFormat:@"传递数据到B页面了"];
     id vc = segue.destinationViewController;
     // 设置下一个控制器(添加联系人的控制器)的代理
-//    直接传值方式
+//    1直接传值方式
     PassValueViewController *passValueVC = vc;
     passValueVC.directPassValue = @"接口声明传递数据到B页面";
 //    passValueVC.title = @"传递到B页面了";
-//    代理回调传值方式
+//    3代理回调传值方式
     passValueVC.delegate = self;
 //    块传值方式
     passValueVC.block = ^(NSString *str)
     {
-        self.retrunValue.text = str;
+        self.blockValue.text = str;
     };
     self.title = @"A页面";
 }
 
-//协议的回调方法
+//2协议的回调方法
 -(void)returnValueFromBVC:(NSString *)returnValue
 {
-    self.title = returnValue;
+    self.retrunValue.text = returnValue;
 }
 //2015-8-25
 
@@ -376,7 +383,7 @@
 -(void)ChangeNameNotification:(NSNotification*)notification{
     
     NSDictionary *nameDictionary = [notification userInfo];
-    self.retrunValue.text = [nameDictionary objectForKey:@"name"];
+    self.notiValue.text = [nameDictionary objectForKey:@"name"];
 }
 
 
