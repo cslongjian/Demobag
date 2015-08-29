@@ -141,6 +141,14 @@
     [super viewDidUnload];
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"] length] != 0) {
+        self.retrunValue.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaults"];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -344,23 +352,27 @@
     id vc = segue.destinationViewController;
     // 设置下一个控制器(添加联系人的控制器)的代理
 //    直接传值方式
-    PassValueViewController *addVc = vc;
-    addVc.title = @"传递到B页面了";
+    PassValueViewController *passValueVC = vc;
+    passValueVC.directPassValue = @"接口声明传递数据到B页面";
+//    passValueVC.title = @"传递到B页面了";
 //    代理回调传值方式
-    addVc.delegate = self;
+    passValueVC.delegate = self;
 //    块传值方式
-    addVc.block = ^(NSString *str)
+    passValueVC.block = ^(NSString *str)
     {
         self.retrunValue.text = str;
     };
     self.title = @"A页面";
 }
--(void)returnValueforBcontroller:(NSString *)returnValue
+
+//协议的回调方法
+-(void)returnValueFromBVC:(NSString *)returnValue
 {
     self.title = returnValue;
 }
 //2015-8-25
 
+//4通知方式回传数据到A页面
 -(void)ChangeNameNotification:(NSNotification*)notification{
     
     NSDictionary *nameDictionary = [notification userInfo];

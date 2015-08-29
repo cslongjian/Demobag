@@ -117,13 +117,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-Yg-xEq">
+                                <rect key="frame" x="245" y="368" width="110" height="30"/>
+                                <state key="normal" title="NSUserDefaults">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="NSUserDefaultsMethod:" destination="RQj-EI-a5U" eventType="touchUpInside" id="pJC-4K-nU5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="caF-EN-KK3" secondAttribute="centerX" id="4qO-nx-OWz"/>
                             <constraint firstItem="dfg-5w-OzN" firstAttribute="top" secondItem="E8k-Vd-nqT" secondAttribute="bottom" constant="94" id="75U-Fb-WtY"/>
+                            <constraint firstAttribute="centerX" secondItem="zV5-Yg-xEq" secondAttribute="centerX" id="84h-dF-7Id"/>
                             <constraint firstAttribute="trailing" secondItem="5oZ-ex-Bs3" secondAttribute="trailing" constant="16" id="D6k-RA-zRJ"/>
                             <constraint firstAttribute="centerY" secondItem="caF-EN-KK3" secondAttribute="centerY" id="Rs1-1y-f4v"/>
+                            <constraint firstItem="zV5-Yg-xEq" firstAttribute="top" secondItem="caF-EN-KK3" secondAttribute="bottom" constant="53" id="St6-Qq-NvO"/>
                             <constraint firstItem="VpR-3v-I3V" firstAttribute="leading" secondItem="Mb4-Eb-qi1" secondAttribute="leading" constant="16" id="ZOm-zk-Qo4"/>
                             <constraint firstAttribute="centerY" secondItem="5oZ-ex-Bs3" secondAttribute="centerY" id="gLv-Jp-X5h"/>
                             <constraint firstAttribute="centerY" secondItem="VpR-3v-I3V" secondAttribute="centerY" id="ooT-sj-0aV"/>

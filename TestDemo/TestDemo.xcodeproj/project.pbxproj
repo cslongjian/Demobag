@@ -130,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE8C6B8B1B9194720011DF6B /* DataTransmission */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F48261B8CBF650073C9DF /* PassValueViewController.h */,
+				DE6F48271B8CBF650073C9DF /* PassValueViewController.m */,
+			);
+			name = DataTransmission;
+			sourceTree = "<group>";
+		};
 		DEE67C5F1B7CD86F00F93DA7 /* ThirdLibrarys */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +169,7 @@
 		DEE67C621B7CD90000F93DA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE8C6B8B1B9194720011DF6B /* DataTransmission */,
 				DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */,
 				DEE67C721B81C3CC00F93DA7 /* PictureViewController.m */,
 				DEE67CA61B81DC5900F93DA7 /* SudokuViewController.h */,
@@ -168,8 +178,6 @@
 				DEE67CAA1B830F1800F93DA7 /* UIScrollViewController.m */,
 				DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */,
 				DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */,
-				DE6F48261B8CBF650073C9DF /* PassValueViewController.h */,
-				DE6F48271B8CBF650073C9DF /* PassValueViewController.m */,
 				DE6F48291B8DB8550073C9DF /* GCDViewController.h */,
 				DE6F482A1B8DB8550073C9DF /* GCDViewController.m */,
 			);

@@ -7,16 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+
+//2使用协议设置代理的方式传递数据。
 @protocol RetrunControllerDelegate <NSObject>
 @optional
-//- (void)addViewController:(MJAddViewController *)addVc didAddContactWithName:(NSString *)name phone:(NSString *)phone;
-- (void)returnValueforBcontroller:(NSString *) returnValue;
+- (void)returnValueFromBVC:(NSString *) returnValue;
 @end
+
+//3使用块的方式传递数据
 typedef void(^ABlock)(NSString *str);
 
 @interface PassValueViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *returnValue;
+
+//1直接接口声明属性方式传递
+@property (nonatomic, strong) NSString *directPassValue;
+
+//2使用协议设置代理方式传递数据
 @property (nonatomic, weak) id<RetrunControllerDelegate> delegate;
+
+//3使用块的方式传递数据
 @property (nonatomic,copy) ABlock block;
+
+@property (weak, nonatomic) IBOutlet UITextField *returnValue;
 
 @end
