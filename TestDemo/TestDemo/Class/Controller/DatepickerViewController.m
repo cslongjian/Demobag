@@ -82,9 +82,6 @@
 }
 */
 
-
-
-
  // 控制器的view即将显示的时候调用
  - (void)viewWillAppear:(BOOL)animated
  {
@@ -116,7 +113,7 @@
  {
          [super viewWillUnload];
       NSLog(@"1控制器的viewWillUnload");
-     }
+ }
  // 控制器的view完全销毁的时候调用
  - (void)viewDidUnload
  {
@@ -125,10 +122,6 @@
          // 清空不需要的属性
      //    [self.foods release];
 //         self.foods = nil;
-     }
-
-
-
-
+ }
 
 @end
