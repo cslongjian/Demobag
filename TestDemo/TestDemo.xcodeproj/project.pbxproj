@@ -11,6 +11,7 @@
 		DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */; };
 		DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48271B8CBF650073C9DF /* PassValueViewController.m */; };
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
+		DE8C6B8E1B9401640011DF6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6B8D1B9401640011DF6B /* MainViewController.m */; };
 		DEE67C681B7CDAB300F93DA7 /* StartUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C671B7CDAB300F93DA7 /* StartUIView.m */; };
 		DEE67C731B81C3CC00F93DA7 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C721B81C3CC00F93DA7 /* PictureViewController.m */; };
 		DEE67C961B81D1FA00F93DA7 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C761B81D1FA00F93DA7 /* MKAnnotationView+WebCache.m */; };
@@ -59,6 +60,8 @@
 		DE6F48271B8CBF650073C9DF /* PassValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueViewController.m; sourceTree = "<group>"; };
 		DE6F48291B8DB8550073C9DF /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		DE6F482A1B8DB8550073C9DF /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		DE8C6B8C1B9401640011DF6B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DE8C6B8D1B9401640011DF6B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DEE67C661B7CDAB300F93DA7 /* StartUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUIView.h; sourceTree = "<group>"; };
 		DEE67C671B7CDAB300F93DA7 /* StartUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUIView.m; sourceTree = "<group>"; };
 		DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
@@ -151,6 +154,15 @@
 			name = DataTransmission;
 			sourceTree = "<group>";
 		};
+		DE8C6B8F1B9408640011DF6B /* GCDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F48291B8DB8550073C9DF /* GCDViewController.h */,
+				DE6F482A1B8DB8550073C9DF /* GCDViewController.m */,
+			);
+			name = GCDDemo;
+			sourceTree = "<group>";
+		};
 		DEE67C5F1B7CD86F00F93DA7 /* ThirdLibrarys */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 		DEE67C621B7CD90000F93DA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE8C6B8F1B9408640011DF6B /* GCDDemo */,
 				DE8C6B8B1B9194720011DF6B /* DataTransmission */,
 				DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */,
 				DEE67C721B81C3CC00F93DA7 /* PictureViewController.m */,
@@ -190,8 +203,6 @@
 				DEE67CAA1B830F1800F93DA7 /* UIScrollViewController.m */,
 				DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */,
 				DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */,
-				DE6F48291B8DB8550073C9DF /* GCDViewController.h */,
-				DE6F482A1B8DB8550073C9DF /* GCDViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +302,8 @@
 				DEE6D88B1B78E0B3002129F7 /* Images.xcassets */,
 				DEE6D88D1B78E0B3002129F7 /* LaunchScreen.xib */,
 				DEE6D87E1B78E0B3002129F7 /* Supporting Files */,
+				DE8C6B8C1B9401640011DF6B /* MainViewController.h */,
+				DE8C6B8D1B9401640011DF6B /* MainViewController.m */,
 			);
 			path = TestDemo;
 			sourceTree = "<group>";
@@ -432,6 +445,7 @@
 				DEE67C9B1B81D1FA00F93DA7 /* SDWebImageDownloader.m in Sources */,
 				DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */,
 				DEE6D8871B78E0B3002129F7 /* ViewController.m in Sources */,
+				DE8C6B8E1B9401640011DF6B /* MainViewController.m in Sources */,
 				DEE67C9D1B81D1FA00F93DA7 /* SDWebImageManager.m in Sources */,
 				DEE67CA51B81D1FA00F93DA7 /* UIView+WebCacheOperation.m in Sources */,
 				DEE67C9F1B81D1FA00F93DA7 /* UIButton+WebCache.m in Sources */,

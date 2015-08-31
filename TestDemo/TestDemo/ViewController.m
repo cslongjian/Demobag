@@ -327,6 +327,10 @@
         DatepickerViewController *score = [[DatepickerViewController alloc] init];
         [self.navigationController pushViewController:score animated:YES];
     
+
+//    presentModalViewController 和presentViewController是一样的效果，都是弹出模态视图。 只不过presentModalViewController被弃用了。
+//    pushViewController 就是uinavigationcontroller推到一个新viewController啊。相反的操作是pop系列的api，是返回上层界面。
+       
 }
 
 //2015-8-25
@@ -352,6 +356,8 @@
 #pragma mark 传递值测试
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+//    手动触发相关的segue跳转
+//    [self performSegueWithIdentifier:<#(NSString *)#> sender:<#(id)#>];
 // 1.取得目标控制器()
 //    PassValueViewController *contactVc = segue.destinationViewController;
 //    // 2.设置标题
