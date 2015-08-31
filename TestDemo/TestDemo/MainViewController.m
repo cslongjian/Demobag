@@ -34,7 +34,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+//新的内容。
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     id vc = segue.destinationViewController;
