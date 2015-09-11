@@ -19,15 +19,15 @@
     // Do any additional setup after loading the view.
  
     // 1在主线程中使用异步执行方式，没有新开线程。
-    [self asyncExecutiveMission];
+//    [self asyncExecutiveMission];
     // 2主线程中同步执行方式导致卡死。
 //    [self syncExecutiveMission];
 //    3串行执行任务
-    [self serialExecutiveMission];
+//    [self serialExecutiveMission];
 //    4并行执行任务
-    [self parallelExecutiveMission];
+//    [self parallelExecutiveMission];
     
-    
+    [self testMission];
     
 }
 
@@ -133,6 +133,30 @@
 
     //
     
+}
+
+//一条题目判定执行顺序
+-(void)testMission
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"222");
+        //由于同步执行主线程导致卡死。。
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"3333333");
+//        });
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"444");
+    });
+    
+    NSLog(@"111");
+    
+    //请问执行顺序
+//    猜测结果  2一定在1后面   4可能在1后或者1前。。  412   124   142
+    
+//    第一次执行 142
+//       出现412
 }
 
 @end
