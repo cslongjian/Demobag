@@ -26,6 +26,7 @@
 		DE134DD21BA4295A00822751 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DC01BA4295A00822751 /* UIRefreshControl+AFNetworking.m */; };
 		DE134DD31BA4295A00822751 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DC21BA4295A00822751 /* UIWebView+AFNetworking.m */; };
 		DE134DD71BA4296900822751 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DD61BA4296900822751 /* HexColors.m */; };
+		DE134DDB1BA56C5E00822751 /* LifeCycleOfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */; };
 		DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */; };
 		DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48271B8CBF650073C9DF /* PassValueViewController.m */; };
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
@@ -111,6 +112,8 @@
 		DE134DC21BA4295A00822751 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		DE134DD51BA4296900822751 /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
 		DE134DD61BA4296900822751 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		DE134DD91BA56C5E00822751 /* LifeCycleOfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleOfViewController.h; sourceTree = "<group>"; };
+		DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleOfViewController.m; sourceTree = "<group>"; };
 		DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatepickerViewController.h; sourceTree = "<group>"; };
 		DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatepickerViewController.m; sourceTree = "<group>"; };
 		DE6F48261B8CBF650073C9DF /* PassValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueViewController.h; sourceTree = "<group>"; };
@@ -272,6 +275,15 @@
 			path = SDWebImage/HexColors;
 			sourceTree = "<group>";
 		};
+		DE134DD81BA56BD600822751 /* LifeCycleOfVC */ = {
+			isa = PBXGroup;
+			children = (
+				DE134DD91BA56C5E00822751 /* LifeCycleOfViewController.h */,
+				DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */,
+			);
+			name = LifeCycleOfVC;
+			sourceTree = "<group>";
+		};
 		DE86D78C1B9D74DC0016C36B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +342,7 @@
 		DEE67C621B7CD90000F93DA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE134DD81BA56BD600822751 /* LifeCycleOfVC */,
 				DE8C6B8F1B9408640011DF6B /* GCDDemo */,
 				DE8C6B8B1B9194720011DF6B /* DataTransmission */,
 				DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */,
@@ -579,6 +592,7 @@
 				DE134DC41BA4295A00822751 /* AFHTTPRequestOperationManager.m in Sources */,
 				DEE67CAB1B830F1800F93DA7 /* UIScrollViewController.m in Sources */,
 				DE134DCC1BA4295A00822751 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DE134DDB1BA56C5E00822751 /* LifeCycleOfViewController.m in Sources */,
 				DEE67CA41B81D1FA00F93DA7 /* UIImageView+WebCache.m in Sources */,
 				DEE67CA21B81D1FA00F93DA7 /* UIImage+WebP.m in Sources */,
 				DEE67C9E1B81D1FA00F93DA7 /* SDWebImagePrefetcher.m in Sources */,
