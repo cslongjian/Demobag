@@ -118,7 +118,7 @@
     NSLog(@"点击了 %ld",(long)buttonIndex);
     if (buttonIndex != 2) {
         //        ImageViewController *imageVC = [[ImageViewController alloc]init];
-        TargeTabbarViewController *tabVC = (TargeTabbarViewController *)[[UIApplication sharedApplication].delegate window].rootViewController;
+//        TargeTabbarViewController *tabVC = (TargeTabbarViewController *)[[UIApplication sharedApplication].delegate window].rootViewController;
         //        [tabVC.selectedViewController.childViewControllers.lastObject  presentViewController:imageVC animated:YES completion:^{}];
         
 //        UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;

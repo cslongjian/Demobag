@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE134DE11BA6AED800822751 /* UnFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DE01BA6AED800822751 /* UnFinishViewController.m */; };
 		DE7912B31B43EC4D005424D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7912B21B43EC4D005424D1 /* main.m */; };
 		DE7912B61B43EC4D005424D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7912B51B43EC4D005424D1 /* AppDelegate.m */; };
 		DE7912B91B43EC4D005424D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7912B81B43EC4D005424D1 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE134DDF1BA6AED800822751 /* UnFinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnFinishViewController.h; sourceTree = "<group>"; };
+		DE134DE01BA6AED800822751 /* UnFinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnFinishViewController.m; sourceTree = "<group>"; };
 		DE7912AD1B43EC4D005424D1 /* Tager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7912B11B43EC4D005424D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7912B21B43EC4D005424D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 			children = (
 				DE7912F11B451B18005424D1 /* AddNewTargetViewController.h */,
 				DE7912F21B451B18005424D1 /* AddNewTargetViewController.m */,
+				DE134DDF1BA6AED800822751 /* UnFinishViewController.h */,
+				DE134DE01BA6AED800822751 /* UnFinishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				DE7912EA1B44E537005424D1 /* UTabbarButton.m in Sources */,
 				DE7912B61B43EC4D005424D1 /* AppDelegate.m in Sources */,
 				DE7912B31B43EC4D005424D1 /* main.m in Sources */,
+				DE134DE11BA6AED800822751 /* UnFinishViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

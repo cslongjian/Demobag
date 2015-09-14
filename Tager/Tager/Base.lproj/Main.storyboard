@@ -47,7 +47,7 @@
         <!--未完成-->
         <scene sceneID="Aye-zO-iGD">
             <objects>
-                <viewController id="23O-rs-rRo" sceneMemberID="viewController">
+                <viewController id="23O-rs-rRo" customClass="UnFinishViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K2u-bw-oMD"/>
                         <viewControllerLayoutGuide type="bottom" id="Pwh-bg-q25"/>

@@ -108,9 +108,9 @@
     
     //操作整个应用中的所有导航栏，只需要给它设置就可以了
     UINavigationBar *navBar = [UINavigationBar appearance];
-    navBar.tintColor = [UIColor whiteColor];
+    navBar.tintColor = [UIColor blackColor];
     //设置导航栏标题颜色
-    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blueColor]}];
     
 }
 
