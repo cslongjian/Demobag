@@ -8,8 +8,12 @@
 
 #import "MainViewController.h"
 #import "GCDViewController.h"
+#import "CustomNav.h"
 
 @interface MainViewController ()
+{
+    CustomNav *_customNav;
+}
 
 @end
 
@@ -19,6 +23,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"DEMO集合";
+    
+    _customNav = [[CustomNav alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    _customNav.textTitle.text = @"DEMO集合";
+    _customNav.backgroundColor = [UIColor blueColor];
+    _customNav.leftButton.hidden = YES;
+    [self.view addSubview:_customNav];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    self.navigationController.navigationBar.translucent = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning {

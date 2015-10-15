@@ -27,6 +27,7 @@
 		DE134DD31BA4295A00822751 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DC21BA4295A00822751 /* UIWebView+AFNetworking.m */; };
 		DE134DD71BA4296900822751 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DD61BA4296900822751 /* HexColors.m */; };
 		DE134DDB1BA56C5E00822751 /* LifeCycleOfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */; };
+		DE134DE51BA90FCA00822751 /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DE41BA90FCA00822751 /* HeadViewController.m */; };
 		DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */; };
 		DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48271B8CBF650073C9DF /* PassValueViewController.m */; };
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
@@ -59,6 +60,7 @@
 		DEE6D88C1B78E0B3002129F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE6D88B1B78E0B3002129F7 /* Images.xcassets */; };
 		DEE6D88F1B78E0B3002129F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE6D88D1B78E0B3002129F7 /* LaunchScreen.xib */; };
 		DEE6D89B1B78E0B4002129F7 /* TestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE6D89A1B78E0B4002129F7 /* TestDemoTests.m */; };
+		DEFB855E1BCF57CB007A4677 /* CustomNav.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB855D1BCF57CB007A4677 /* CustomNav.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		DE134DD61BA4296900822751 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
 		DE134DD91BA56C5E00822751 /* LifeCycleOfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleOfViewController.h; sourceTree = "<group>"; };
 		DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleOfViewController.m; sourceTree = "<group>"; };
+		DE134DE31BA90FCA00822751 /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
+		DE134DE41BA90FCA00822751 /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
 		DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatepickerViewController.h; sourceTree = "<group>"; };
 		DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatepickerViewController.m; sourceTree = "<group>"; };
 		DE6F48261B8CBF650073C9DF /* PassValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueViewController.h; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 		DEE6D8941B78E0B4002129F7 /* TestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE6D8991B78E0B4002129F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE6D89A1B78E0B4002129F7 /* TestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemoTests.m; sourceTree = "<group>"; };
+		DEFB855C1BCF57CB007A4677 /* CustomNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNav.h; sourceTree = "<group>"; };
+		DEFB855D1BCF57CB007A4677 /* CustomNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNav.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +290,15 @@
 			name = LifeCycleOfVC;
 			sourceTree = "<group>";
 		};
+		DE134DE21BA90FA500822751 /* TableVIewTest */ = {
+			isa = PBXGroup;
+			children = (
+				DE134DE31BA90FCA00822751 /* HeadViewController.h */,
+				DE134DE41BA90FCA00822751 /* HeadViewController.m */,
+			);
+			name = TableVIewTest;
+			sourceTree = "<group>";
+		};
 		DE86D78C1B9D74DC0016C36B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +357,7 @@
 		DEE67C621B7CD90000F93DA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE134DE21BA90FA500822751 /* TableVIewTest */,
 				DE134DD81BA56BD600822751 /* LifeCycleOfVC */,
 				DE8C6B8F1B9408640011DF6B /* GCDDemo */,
 				DE8C6B8B1B9194720011DF6B /* DataTransmission */,
@@ -375,6 +391,7 @@
 		DEE67C651B7CD90000F93DA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEFB855B1BCF5761007A4677 /* Nav */,
 				DE86D78C1B9D74DC0016C36B /* CustomView */,
 				DEE67C661B7CDAB300F93DA7 /* StartUIView.h */,
 				DEE67C671B7CDAB300F93DA7 /* StartUIView.m */,
@@ -483,6 +500,15 @@
 				DEE6D8991B78E0B4002129F7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEFB855B1BCF5761007A4677 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				DEFB855C1BCF57CB007A4677 /* CustomNav.h */,
+				DEFB855D1BCF57CB007A4677 /* CustomNav.m */,
+			);
+			name = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,8 +626,10 @@
 				DE134DCB1BA4295A00822751 /* AFURLSessionManager.m in Sources */,
 				DEE67C9A1B81D1FA00F93DA7 /* SDWebImageDecoder.m in Sources */,
 				DE134DC51BA4295A00822751 /* AFHTTPSessionManager.m in Sources */,
+				DEFB855E1BCF57CB007A4677 /* CustomNav.m in Sources */,
 				DE134DCD1BA4295A00822751 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				DE134DCA1BA4295A00822751 /* AFURLResponseSerialization.m in Sources */,
+				DE134DE51BA90FCA00822751 /* HeadViewController.m in Sources */,
 				DE134DC31BA4295A00822751 /* AFHTTPRequestOperation.m in Sources */,
 				DEE67C9B1B81D1FA00F93DA7 /* SDWebImageDownloader.m in Sources */,
 				DE134DC91BA4295A00822751 /* AFURLRequestSerialization.m in Sources */,
