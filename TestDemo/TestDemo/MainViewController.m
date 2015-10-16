@@ -25,7 +25,7 @@
     self.title = @"DEMO集合";
     
     _customNav = [[CustomNav alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
-    _customNav.textTitle.text = @"DEMO集合";
+    _customNav.textTitle.text = @"假NAV头 DEMO集合";
     _customNav.backgroundColor = [UIColor blueColor];
     _customNav.leftButton.hidden = YES;
     [self.view addSubview:_customNav];

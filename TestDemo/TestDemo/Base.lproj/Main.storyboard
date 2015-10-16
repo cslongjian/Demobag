@@ -33,8 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJC-c2-Fhw">
-                                <rect key="frame" x="51" y="98" width="122" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJC-c2-Fhw">
+                                <rect key="frame" x="51" y="118" width="121" height="30"/>
                                 <state key="normal" title="DataTransmission">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,8 +42,8 @@
                                     <segue destination="51c-1Z-vR8" kind="push" identifier="first" id="mla-Uj-zro"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4o-In-3Hu">
-                                <rect key="frame" x="43" y="136" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4o-In-3Hu">
+                                <rect key="frame" x="51" y="156" width="33" height="30"/>
                                 <state key="normal" title="GCD">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,8 +51,8 @@
                                     <segue destination="GwL-d7-gnh" kind="push" identifier="second" id="8dZ-dF-SdN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-EB-7es">
-                                <rect key="frame" x="43" y="174" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-EB-7es">
+                                <rect key="frame" x="51" y="184" width="75" height="30"/>
                                 <state key="normal" title="响应者链条">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,8 +60,8 @@
                                     <segue destination="u6k-0O-s9G" kind="push" identifier="third" id="Li3-zP-BVx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-64-Ez6">
-                                <rect key="frame" x="43" y="212" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-64-Ez6">
+                                <rect key="frame" x="51" y="222" width="30" height="30"/>
                                 <state key="normal" title="动画">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -69,26 +69,60 @@
                                     <segue destination="qZL-2u-MWx" kind="push" identifier="four" id="Mxj-O8-Y7c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-5M-mTU">
-                                <rect key="frame" x="43" y="250" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-5M-mTU">
+                                <rect key="frame" x="51" y="250" width="81" height="30"/>
+                                <state key="normal" title="VC生命周期">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="H40-gF-ITn" kind="push" id="tdM-pj-MCU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BJC-c2-Fhw" firstAttribute="top" secondItem="kmK-Gy-RwI" secondAttribute="bottom" constant="34" id="454-yI-GTd"/>
-                            <constraint firstItem="S4o-In-3Hu" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="43" id="5rV-Z8-U1G"/>
+                            <constraint firstItem="d4m-5M-mTU" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="0fL-Ol-t4s"/>
+                            <constraint firstItem="BJC-c2-Fhw" firstAttribute="top" secondItem="kmK-Gy-RwI" secondAttribute="bottom" constant="54" id="454-yI-GTd"/>
+                            <constraint firstItem="S4o-In-3Hu" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="5rV-Z8-U1G"/>
+                            <constraint firstItem="5AZ-EB-7es" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="DJs-A2-Dn7"/>
+                            <constraint firstItem="nQv-64-Ez6" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="MI2-5l-PHD"/>
                             <constraint firstItem="BJC-c2-Fhw" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="Y3f-ua-j19"/>
+                            <constraint firstItem="nQv-64-Ez6" firstAttribute="top" secondItem="S4o-In-3Hu" secondAttribute="bottom" constant="36" id="alP-Du-9B3"/>
+                            <constraint firstItem="5AZ-EB-7es" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="36" id="fc4-AN-ceJ"/>
+                            <constraint firstItem="5AZ-EB-7es" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="26" id="hPc-qc-CLD"/>
                             <constraint firstItem="S4o-In-3Hu" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="8" id="jjY-rO-WI3"/>
+                            <constraint firstItem="d4m-5M-mTU" firstAttribute="top" secondItem="5AZ-EB-7es" secondAttribute="bottom" constant="36" id="uIO-Av-cJ3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hPc-qc-CLD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="5j8-4o-kxh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztS-fe-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969" y="1047"/>
+        </scene>
+        <!--Life Cycle Of View Controller-->
+        <scene sceneID="fnE-zu-IyS">
+            <objects>
+                <viewController id="H40-gF-ITn" customClass="LifeCycleOfViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H79-jb-pun"/>
+                        <viewControllerLayoutGuide type="bottom" id="faB-uU-cj9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zqz-Iz-fdc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AjP-n8-F5W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBP-Pp-0e6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="1829"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mIP-0E-f6O">

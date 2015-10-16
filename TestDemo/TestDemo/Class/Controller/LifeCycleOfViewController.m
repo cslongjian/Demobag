@@ -18,6 +18,7 @@
     [super viewDidLoad];
     NSLog(@"1控制器的view加载完毕----viewDidLoad");
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,12 +42,15 @@
 {
     [super viewWillAppear:YES];
     NSLog(@"1控制器的view即将显示----viewWillAppear");
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    self.navigationController.title = @"VC生命周期测试案例";
 }
 // 控制器的view完全显示的时候调用
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     NSLog(@"1控制器的view完全显示----viewDidAppear");
+//      [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
 // 控制器的view即将消失的时候调用
@@ -54,12 +58,14 @@
 {
     [super viewWillDisappear:animated];
     NSLog(@"1控制器的view即将消失----viewWillDisappear");
+      [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 // 控制器的view完全消失的时候调用
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
     NSLog(@"1控制器的view完全消失---viewDidDisappear");
+//     [self.navigationController setNavigationBarHidden:YES];
 }
 
 // 控制器的view即将销毁的时候调用

@@ -32,6 +32,7 @@
     self.leftButton = [[UIButton alloc]initWithFrame:CGRectMake(5, 20, 44, 44)];
     self.rightButton = [[UIButton alloc]initWithFrame:CGRectMake(self.frame.size.width-50, 20, 44, 44)];
     self.textTitle = [[UILabel alloc]initWithFrame:CGRectMake(44, 20, self.frame.size.width-88, 44)];
+    self.imageTitle = [[UIImageView alloc]init];
     self.textTitle.textAlignment = NSTextAlignmentCenter;
     self.textTitle.textColor = [UIColor whiteColor];
     self.textTitle.font = [UIFont systemFontOfSize:18 weight:1];
@@ -39,6 +40,8 @@
     [self.rightButton setImage:[UIImage imageNamed:@"消息"] forState:UIControlStateNormal];
     [self addSubview:self.leftButton];
     [self addSubview:self.rightButton];
+    [self addSubview:self.textTitle];
+    [self addSubview:self.imageTitle];
 
 }
 
