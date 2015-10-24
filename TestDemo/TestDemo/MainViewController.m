@@ -40,6 +40,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    self.navigationController.navigationBar.translucent = NO;
+}
+
 /*
 #pragma mark - Navigation
 
