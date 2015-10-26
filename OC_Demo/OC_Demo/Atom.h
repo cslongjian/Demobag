@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Write.h"
 
-@interface Atom : NSObject
+@interface Atom : NSObject <Write>
 
 /*
  @property (特性) 属性的类型 属性的名称；
@@ -38,7 +39,17 @@
 @property (readonly) NSUInteger electrons;
 @property (readonly) NSString *chemicalElement;
 
+
+/*方法 
+ +（返回类型）方法名称：（参数类型）参数1 方法名：（参数类型）参数2
+ -（返回类型）方法名称：（参数类型）参数1 方法名：（参数类型）参数2
+ 
+ 分别是类方法和实例方法
+ */
++(void) ClassMethod:(NSString *)print;
+
 - (NSUInteger) massNumber;
+
 
 
 @end
