@@ -33,7 +33,7 @@
 
 - (NSUInteger) massNumber
 {
-    return 0;
+    return self.protons + self.neutrons;
 }
 
 -(void)write:(NSFileHandle *)file

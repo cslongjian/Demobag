@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Atom.h"
+#import "Hydrogen.h"
+#import "Atom+Nuclear.h"
+#import "Atom+Helper.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +27,13 @@ int main(int argc, const char * argv[]) {
         //second
         Atom *atom = [[Atom alloc]init];
         NSLog(@"atom chemical element name:%@", atom.chemicalElement);
+        
+//        消息转发功能。
+        Hydrogen *atoam = [Hydrogen hydrogenWithNeutrons:2];
+        NSString *fact = [atoam factoid];
+        
+        NSLog(@"%@",fact);
+        
         
     }
     return 0;

@@ -34,10 +34,19 @@
  setter = setterName  重置读取器的名称
  
  */
+{
+@protected NSUInteger _protons;
+@protected NSUInteger _neutrons;
+@protected NSUInteger _electrons;
+@protected NSString *_chemicalElement;
+@protected NSString *_atomicSymbol;
+}
+
 @property (readonly) NSUInteger protons;
 @property (readonly) NSUInteger neutrons;
 @property (readonly) NSUInteger electrons;
 @property (readonly) NSString *chemicalElement;
+@property (readonly) NSString *atomicSymbol;
 
 
 /*方法 
