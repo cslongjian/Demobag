@@ -11,4 +11,5 @@
 @interface HydrogenHelper : NSObject
 
 - (NSString *) factoid;
+
 @end

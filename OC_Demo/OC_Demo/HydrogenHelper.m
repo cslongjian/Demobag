@@ -12,7 +12,7 @@
 
 - (NSString *) factoid
 {
-    //返回注解
+    //返回 注解
     return @"the lightest element and most abundant chemical substance.";
 }
 

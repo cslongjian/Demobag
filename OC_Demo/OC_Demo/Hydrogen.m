@@ -11,7 +11,7 @@
 
 @implementation Hydrogen
 {
-@private HydrogenHelper *helper;
+    @private HydrogenHelper *helper;
 }
 
 - (instancetype)initWithNeutrons:(NSUInteger)neutrons

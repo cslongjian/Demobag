@@ -10,6 +10,7 @@
 
 @interface Atom (Helper)
 
+
 -(NSString *) factoid;
 
 @end

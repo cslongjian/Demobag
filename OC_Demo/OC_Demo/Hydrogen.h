@@ -10,6 +10,7 @@
 
 @interface Hydrogen : Atom
 
+
 - (instancetype) initWithNeutrons:(NSUInteger)neutrons;
 + (instancetype) hydrogenWithNeutrons:(NSUInteger)neutrons;
 
