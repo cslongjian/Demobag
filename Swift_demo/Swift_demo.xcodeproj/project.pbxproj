@@ -14,6 +14,7 @@
 		DE8717781BE0D27600ADBEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8717761BE0D27600ADBEE5 /* LaunchScreen.storyboard */; };
 		DE8717831BE0D27600ADBEE5 /* Swift_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8717821BE0D27600ADBEE5 /* Swift_demoTests.swift */; };
 		DE87178E1BE0D27600ADBEE5 /* Swift_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87178D1BE0D27600ADBEE5 /* Swift_demoUITests.swift */; };
+		DE87179E1BE2053600ADBEE5 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87179D1BE2053600ADBEE5 /* CalculatorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DE8717891BE0D27600ADBEE5 /* Swift_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE87178D1BE0D27600ADBEE5 /* Swift_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_demoUITests.swift; sourceTree = "<group>"; };
 		DE87178F1BE0D27600ADBEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE87179D1BE2053600ADBEE5 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DE8717741BE0D27600ADBEE5 /* Assets.xcassets */,
 				DE8717761BE0D27600ADBEE5 /* LaunchScreen.storyboard */,
 				DE8717791BE0D27600ADBEE5 /* Info.plist */,
+				DE87179D1BE2053600ADBEE5 /* CalculatorViewController.swift */,
 			);
 			path = Swift_demo;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8717701BE0D27600ADBEE5 /* ViewController.swift in Sources */,
+				DE87179E1BE2053600ADBEE5 /* CalculatorViewController.swift in Sources */,
 				DE87176E1BE0D27600ADBEE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
