@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         Atom *atom = [[Atom alloc]init];
         NSLog(@"atom chemical element name:%@", atom.chemicalElement);
         
-///       /转发功能。
+///       /转发功能。 无法使用6.4去跑swift代码。测试提交
         Hydrogen *atoam = [Hydrogen hydrogenWithNeutrons:2];
         NSString *fact = [atoam factoid];
         
