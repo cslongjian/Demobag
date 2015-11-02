@@ -78,6 +78,19 @@ class CalculatorViewController: UIViewController {
         pointBtn.addTarget(self, action: Selector("addPoint"), forControlEvents: UIControlEvents.TouchUpInside)
         cleanBtn.addTarget(self, action: Selector("cleanAll"), forControlEvents: UIControlEvents.TouchUpInside)
         
+        let test = 10.2
+        let test2 = 1
+        let v = test % (Double)(test2)
+        print(v)
+        
+        let test3 = 10.0
+        let test4 = 1
+        let vs = test3 % (Double)(test4)
+        print(vs)
+        
+        
+        
+        
     }
     
     //点击操作按钮时候记录当前操作数为第二值。。再次点击数目就赋值第二个操作数。不然就以第一个操作数为第二操作数进行计算。
@@ -87,57 +100,63 @@ class CalculatorViewController: UIViewController {
         twiceOp = twiceOp + 1
         setSecondValue = false
         temp = firstValueStr
-        
-        
-//        let optionsValue = btn.tag
-//            switch optionsValue
-//        {
-//        case 1:
-//            print("加法")
-//                options = 1
-//        case 2:
-//            print("减法")
-//                 options = 2
-//        case 3:
-//            print("乘法")
-//                 options = 3
-//        case 4:
-//            print("除法")
-//                 options = 4
-//        case 5:
-//            print("百分比")
-//        case 6:
-//            print("正负取反")
-//        default:
-//            print("默认选择")
-//        }
-        
-        
-        
         if ((rightOff == true) && (twiceOp == 1)){
             let value = (Float)(temp!)
             let value2 = (Float)(secondValueStr!)
             var answerValue:Float! = 0
+            var answerchangeValue:Int! = 0
             switch options
             {
             case 1:
-                print("加法")
                 answerValue = value! + value2!
+                 if answerValue%1.0 == 0{
+                    answerchangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerchangeValue)
+                    appLable.text = (String)(answerchangeValue)
+                }else
+                 {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }
+              
             case 2:
-                print("减法")
-                 answerValue = value! - value2!
+                answerValue = value! - value2!
+                if answerValue%1.0 == 0{
+                    answerchangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerchangeValue)
+                    appLable.text = (String)(answerchangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }
             case 3:
-                print("乘法")
-                 answerValue = value! * value2!
+                answerValue = value! * value2!
+                if answerValue%1.0 == 0{
+                    answerchangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerchangeValue)
+                    appLable.text = (String)(answerchangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }
             case 4:
-                print("除法")
                 answerValue = value! / value2!
+                if answerValue%1.0 == 0{
+                    answerchangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerchangeValue)
+                    appLable.text = (String)(answerchangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }
             default:
-                print("默认选择")
+                print("2默认选择")
+                 appLable.text = firstValueStr
             }
-            firstValueStr = (String)(answerValue)
             secondValueStr = "0"
-            appLable.text = (String)(answerValue)
         }
         
 //        记录当前点击操作符号
@@ -163,8 +182,6 @@ class CalculatorViewController: UIViewController {
         default:
             print("默认选择")
         }
-
-       
         rightOff = true
     }
 
@@ -190,10 +207,6 @@ class CalculatorViewController: UIViewController {
             secondValueStr = secondValueStr + addvalue
              appLable.text = secondValueStr
         }
-        
-        print("第一个参数:\(firstValueStr)")
-        print("第二个参数:\(secondValueStr)")
-        
     }
     
     func cleanAll()
@@ -209,7 +222,68 @@ class CalculatorViewController: UIViewController {
     
     func equalValue()
     {
-         print("结果")
+            let value = (Float)(temp!)
+            let value2 = (Float)(secondValueStr!)
+            var answerValue:Float! = 0
+            var answerChangeValue:Int! = 0
+            switch options
+            {
+            case 1:
+                print("加法")
+                answerValue = value! + value2!
+                options = 0
+                temp = (String)(answerValue)
+                if answerValue%1.0 == 0{
+                    answerChangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerChangeValue)
+                    appLable.text = (String)(answerChangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }
+            case 2:
+                print("减法")
+                answerValue = value! - value2!
+                options = 0
+                temp = (String)(answerValue)
+                if answerValue%1.0 == 0{
+                    answerChangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerChangeValue)
+                    appLable.text = (String)(answerChangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }            case 3:
+                print("乘法")
+                answerValue = value! * value2!
+                options = 0
+                temp = (String)(answerValue)
+                if answerValue%1.0 == 0{
+                    answerChangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerChangeValue)
+                    appLable.text = (String)(answerChangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }            case 4:
+                print("除法")
+                answerValue = value! / value2!
+                options = 0
+                temp = (String)(answerValue)
+                if answerValue%1.0 == 0{
+                    answerChangeValue = (Int)(answerValue)
+                    firstValueStr = (String)(answerChangeValue)
+                    appLable.text = (String)(answerChangeValue)
+                }else
+                {
+                    firstValueStr = (String)(answerValue)
+                    appLable.text = (String)(answerValue)
+                }            default:
+                print("默认选择")
+            }
     }
     
     func addPoint()
@@ -239,18 +313,10 @@ class CalculatorViewController: UIViewController {
                     isAddPoint = true
                 }
             }
-            
             if isAddPoint == true{
                 secondValueStr = secondValueStr + "."
             }
             appLable.text = secondValueStr
         }
-        
-        print("第一个参数:\(firstValueStr)")
-        print("第二个参数:\(secondValueStr)")
-        
-        
-        
     }
-
 }
