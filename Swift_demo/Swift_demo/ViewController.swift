@@ -59,11 +59,47 @@ class ViewController: UIViewController {
         let strs:String! = "gjsl"
         print(strs)
         print(strs!)
+        
+        //方法的使用。
+        let hello = sayHello("swift")
+        print(hello)
+        //元组的操作方法。
+        let tuple = retrunTuple()
+        print(tuple.name + ":" + (String)(tuple.value))
+        //默认参数
+        defaultArg()
+        defaultArg(1)
+//        可变参数
+        print((String)(arithmeticMean(array: 1, 2, 3, 4, 5)))
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+//    方法：func 方法名（ ）-> 返回类型
+    func sayHello(personName: String) -> String{
+        let greeting = "hello," + personName + "!"
+        return greeting
+    }
+//    方法返回元组，操作元组
+    func retrunTuple() -> (name: String, value: Int){
+        return ("name",1)
+    }
+//    默认参数情况
+    func defaultArg(paramenter: Int = 12)
+    {
+        print(paramenter)
+    }
+//    可变参数
+//    传入可变参数的值在函数体内当做这个类型的一个数组。例如,一个叫做 numbers 的 Double... 型可变参 数,在函数体内可以当做一个叫 numbers 的 Double[] 型的数组常量
+    func arithmeticMean(array numbers: Double...) -> Double {
+        var total: Double = 0
+        for number in numbers {
+        total += number }
+        return total / Double(numbers.count)
     }
 
 

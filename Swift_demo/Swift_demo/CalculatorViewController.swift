@@ -177,6 +177,7 @@ class CalculatorViewController: UIViewController {
             options = 4
         case 5:
             print("百分比")
+            
         case 6:
             print("正负取反")
         default:
