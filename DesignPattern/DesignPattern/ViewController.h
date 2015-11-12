@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  DesignPattern
+//
+//  Created by Supwin_mbp002 on 15/11/12.
+//  Copyright © 2015年 chenlongjian. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+

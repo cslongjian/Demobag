@@ -101,6 +101,10 @@ class ViewController: UIViewController {
         total += number }
         return total / Double(numbers.count)
     }
+    
+    
+    //闭包是啥玩意呢。
+//    类似于OC中的block 可以传递使用
 
 
 }
