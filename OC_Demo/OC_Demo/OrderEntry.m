@@ -10,4 +10,15 @@
 
 @implementation OrderEntry
 
+-(instancetype)initWith:(NSString *)oid
+{
+    if (self = [super init]) {
+        NSLog(@"initializing orderEntry object");
+        orderId = oid;
+        item = [[OrderItem alloc] initWithName:@"doodle"];
+        shippingAddress = [[Address alloc] init];
+    }
+    return  self;
+}
+
 @end

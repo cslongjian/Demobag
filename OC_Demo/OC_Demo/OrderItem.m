@@ -14,6 +14,7 @@
 {
     if (self = [super init]) {
         NSLog(@"initializing oderitem object");
+        name = itemName;
     }
     return self;
 }
