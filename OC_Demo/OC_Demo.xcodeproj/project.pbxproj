@@ -35,6 +35,7 @@
 		259809F01BDFCB1F0001464B /* HydrogenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HydrogenHelper.h; sourceTree = "<group>"; };
 		259809F11BDFCB1F0001464B /* HydrogenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HydrogenHelper.m; sourceTree = "<group>"; };
 		259809F31BDFCCBE0001464B /* Atom+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Atom+Helper.h"; sourceTree = "<group>"; };
+		DE1ED40B1BFC684F007C115C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DE36A4BE1BDE5BFE0097619D /* Write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Write.h; sourceTree = "<group>"; };
 		DE36A4BF1BDE5E620097619D /* Atom+Nuclear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Atom+Nuclear.h"; sourceTree = "<group>"; };
 		DE36A4C01BDE5E620097619D /* Atom+Nuclear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Atom+Nuclear.m"; sourceTree = "<group>"; };
@@ -73,6 +74,14 @@
 			name = third;
 			sourceTree = "<group>";
 		};
+		DE1ED40A1BFC6825007C115C /* five */ = {
+			isa = PBXGroup;
+			children = (
+				DE1ED40B1BFC684F007C115C /* PrefixHeader.pch */,
+			);
+			name = five;
+			sourceTree = "<group>";
+		};
 		DE4B07E71BF4ECD00018892B /* four */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +114,7 @@
 		DEA625551BDB752B00546B0B /* OC_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE1ED40A1BFC6825007C115C /* five */,
 				DE4B07E71BF4ECD00018892B /* four */,
 				259809EC1BDFC8D30001464B /* third */,
 				DEA6255D1BDB777900546B0B /* second */,
@@ -275,6 +285,7 @@
 		DEA6255B1BDB752B00546B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OC_Demo/PrefixHeader.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -282,6 +293,7 @@
 		DEA6255C1BDB752B00546B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OC_Demo/PrefixHeader.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

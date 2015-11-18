@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%@",fact);
         
-        
+        LOG();
     }
     return 0;
 }
