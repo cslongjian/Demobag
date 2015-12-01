@@ -8,12 +8,17 @@
 
 #import "MainViewController.h"
 #import "GCDViewController.h"
+#import "runtimeDemoViewController.h"
 #import "CustomNav.h"
 
 @interface MainViewController ()
 {
     CustomNav *_customNav;
 }
+
+@property (weak, nonatomic) IBOutlet UIButton *runtimeButton;
+
+
 
 @end
 
@@ -32,6 +37,8 @@
     
 //    [self.navigationController setNavigationBarHidden:YES];
 //    self.navigationController.navigationBar.translucent = NO;
+    
+    [self.runtimeButton addTarget:self action:@selector(gotoRuntimeDemo) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -86,6 +93,14 @@
         UIViewController *direct = vc;
         direct.title = @"动画";
     }
+}
+
+//
+- (void)gotoRuntimeDemo
+{
+    NSLog(@"gotoRuntimeDemo");
+    runtimeDemoViewController *rumtime = [[runtimeDemoViewController alloc] init];
+    [self.navigationController pushViewController:rumtime animated:YES];
 }
 
 @end

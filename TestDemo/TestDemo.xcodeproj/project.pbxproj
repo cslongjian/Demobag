@@ -28,6 +28,7 @@
 		DE134DD71BA4296900822751 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DD61BA4296900822751 /* HexColors.m */; };
 		DE134DDB1BA56C5E00822751 /* LifeCycleOfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */; };
 		DE134DE51BA90FCA00822751 /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE134DE41BA90FCA00822751 /* HeadViewController.m */; };
+		DE5625F91C0DFAA3009DB0EB /* runtimeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5625F81C0DFAA3009DB0EB /* runtimeDemoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */; };
 		DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F48271B8CBF650073C9DF /* PassValueViewController.m */; };
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
@@ -118,6 +119,8 @@
 		DE134DDA1BA56C5E00822751 /* LifeCycleOfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleOfViewController.m; sourceTree = "<group>"; };
 		DE134DE31BA90FCA00822751 /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
 		DE134DE41BA90FCA00822751 /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
+		DE5625F71C0DFAA3009DB0EB /* runtimeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeDemoViewController.h; sourceTree = "<group>"; };
+		DE5625F81C0DFAA3009DB0EB /* runtimeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeDemoViewController.m; sourceTree = "<group>"; };
 		DE6F48231B85BBA90073C9DF /* DatepickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatepickerViewController.h; sourceTree = "<group>"; };
 		DE6F48241B85BBA90073C9DF /* DatepickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatepickerViewController.m; sourceTree = "<group>"; };
 		DE6F48261B8CBF650073C9DF /* PassValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueViewController.h; sourceTree = "<group>"; };
@@ -299,6 +302,29 @@
 			name = TableVIewTest;
 			sourceTree = "<group>";
 		};
+		DE5625F41C0DF544009DB0EB /* runtimeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE5625F71C0DFAA3009DB0EB /* runtimeDemoViewController.h */,
+				DE5625F81C0DFAA3009DB0EB /* runtimeDemoViewController.m */,
+			);
+			name = runtimeDemo;
+			sourceTree = "<group>";
+		};
+		DE5625F51C0DF55A009DB0EB /* runloopDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = runloopDemo;
+			sourceTree = "<group>";
+		};
+		DE5625F61C0DF576009DB0EB /* AnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AnimationDemo;
+			sourceTree = "<group>";
+		};
 		DE86D78C1B9D74DC0016C36B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +383,9 @@
 		DEE67C621B7CD90000F93DA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE5625F61C0DF576009DB0EB /* AnimationDemo */,
+				DE5625F51C0DF55A009DB0EB /* runloopDemo */,
+				DE5625F41C0DF544009DB0EB /* runtimeDemo */,
 				DE134DE21BA90FA500822751 /* TableVIewTest */,
 				DE134DD81BA56BD600822751 /* LifeCycleOfVC */,
 				DE8C6B8F1B9408640011DF6B /* GCDDemo */,
@@ -622,6 +651,7 @@
 				DEE67CA41B81D1FA00F93DA7 /* UIImageView+WebCache.m in Sources */,
 				DEE67CA21B81D1FA00F93DA7 /* UIImage+WebP.m in Sources */,
 				DEE67C9E1B81D1FA00F93DA7 /* SDWebImagePrefetcher.m in Sources */,
+				DE5625F91C0DFAA3009DB0EB /* runtimeDemoViewController.m in Sources */,
 				DEE67C731B81C3CC00F93DA7 /* PictureViewController.m in Sources */,
 				DE134DCB1BA4295A00822751 /* AFURLSessionManager.m in Sources */,
 				DEE67C9A1B81D1FA00F93DA7 /* SDWebImageDecoder.m in Sources */,
