@@ -30,14 +30,20 @@
     _customNav.leftButton.hidden = YES;
     [self.view addSubview:_customNav];
     
-    [self.navigationController setNavigationBarHidden:YES];
-    self.navigationController.navigationBar.translucent = NO;
+//    [self.navigationController setNavigationBarHidden:YES];
+//    self.navigationController.navigationBar.translucent = NO;
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES];
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 -(void)viewWillDisappear:(BOOL)animated

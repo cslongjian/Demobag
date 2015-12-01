@@ -49,6 +49,7 @@
 		DEA625561BDB752B00546B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEA6255E1BDB77AF00546B0B /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DEA6255F1BDB77AF00546B0B /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
+		DEEBD3831BFF0494004246F3 /* addPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1ED40B1BFC684F007C115C /* PrefixHeader.pch */,
+				DEEBD3831BFF0494004246F3 /* addPrefixHeader.pch */,
 			);
 			name = five;
 			sourceTree = "<group>";
@@ -285,6 +287,7 @@
 		DEA6255B1BDB752B00546B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OC_Demo/PrefixHeader.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -293,6 +296,7 @@
 		DEA6255C1BDB752B00546B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OC_Demo/PrefixHeader.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

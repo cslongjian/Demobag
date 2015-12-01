@@ -40,24 +40,24 @@
     
     
 //    自定义view 测试2
-//    边宽
-    self.customView.layer.borderWidth = 10;
-//    边颜色
-    self.customView.layer.borderColor = [UIColor redColor].CGColor;
-    //设置layer的圆角
-    self.customView.layer.cornerRadius=20;
-    //设置超过子图层的部分裁减掉
-    //UI框架中使用的方法
-//    self.customView.clipsToBounds=YES;
-    self.customView.layer.masksToBounds=YES;
-    //在view的图层上添加一个image，contents表示接受内容
-    self.customView.layer.contents=(id)[UIImage imageNamed:@"mac_0"].CGImage;
-    //设置阴影的颜色
-    self.customView.layer.shadowColor=[UIColor blackColor].CGColor;
-    //设置阴影的偏移量，如果为正数，则代表为往右边偏移
-    self.customView.layer.shadowOffset=CGSizeMake(15, 5);
-    //设置阴影的透明度(0~1之间，0表示完全透明)
-    self.customView.layer.shadowOpacity=0.6;
+////    边宽
+//    self.customView.layer.borderWidth = 10;
+////    边颜色
+//    self.customView.layer.borderColor = [UIColor redColor].CGColor;
+//    //设置layer的圆角
+//    self.customView.layer.cornerRadius=20;
+//    //设置超过子图层的部分裁减掉
+//    //UI框架中使用的方法
+////    self.customView.clipsToBounds=YES;
+//    self.customView.layer.masksToBounds=YES;
+//    //在view的图层上添加一个image，contents表示接受内容
+//    self.customView.layer.contents=(id)[UIImage imageNamed:@"mac_0"].CGImage;
+//    //设置阴影的颜色
+//    self.customView.layer.shadowColor=[UIColor blackColor].CGColor;
+//    //设置阴影的偏移量，如果为正数，则代表为往右边偏移
+//    self.customView.layer.shadowOffset=CGSizeMake(15, 5);
+//    //设置阴影的透明度(0~1之间，0表示完全透明)
+//    self.customView.layer.shadowOpacity=0.6;
     
     
     //1.创建核心动画
@@ -83,7 +83,7 @@
     //设置代理，开始—结束
     keyAnima.delegate=self;
     //2.添加核心动画
-    [self.customView.layer addAnimation:keyAnima forKey:nil];
+//    [self.customView.layer addAnimation:keyAnima forKey:nil];
     
     
 //    自定义控件测试
@@ -116,24 +116,22 @@
     [self.view addSubview:test];
     
     //图片查看入口
-    CGRect btn = CGRectMake(60, 60, 150, 50);
-    UIButton * picture = [UIButton buttonWithType:UIButtonTypeSystem];
-    picture.frame = btn;
-    //    test.backgroundColor = [UIColor clearColor];
-    //    test.titleLabel.textColor = [UIColor blueColor];
-    //    test.tintColor = [UIColor redColor];
-    [picture setTitle:@"图片查看器入口" forState:UIControlStateNormal];
-    [picture setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [picture addTarget:self action:@selector(PictureEnterViewController) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:picture];
-    
+//    CGRect btn = CGRectMake(60, 60, 150, 50);
+//    UIButton * picture = [UIButton buttonWithType:UIButtonTypeSystem];
+//    picture.frame = btn;
+//    //    test.backgroundColor = [UIColor clearColor];
+//    //    test.titleLabel.textColor = [UIColor blueColor];
+//    //    test.tintColor = [UIColor redColor];
+//    [picture setTitle:@"图片查看器入口" forState:UIControlStateNormal];
+//    [picture setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//    [picture addTarget:self action:@selector(PictureEnterViewController) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    [self.view addSubview:picture];
+//    
     
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ChangeNameNotification:) name:@"ChangeNameNotification" object:nil];
 
-    
-    
 }
 
 -(void) viewDidUnload
