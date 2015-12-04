@@ -13,6 +13,8 @@
 		DE023C771C1146E0007E4745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE023C751C1146E0007E4745 /* Main.storyboard */; };
 		DE023C791C1146E0007E4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE023C781C1146E0007E4745 /* Assets.xcassets */; };
 		DE023C7C1C1146E0007E4745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE023C7A1C1146E0007E4745 /* LaunchScreen.storyboard */; };
+		DE023C851C116B0F007E4745 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = DE023C841C116B0F007E4745 /* UIViewController+Tracking.m */; settings = {ASSET_TAGS = (); }; };
+		DE023C881C1183E3007E4745 /* NSArray+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DE023C871C1183E3007E4745 /* NSArray+Swizzle.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		DE023C781C1146E0007E4745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE023C7B1C1146E0007E4745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE023C7D1C1146E0007E4745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE023C831C116B0F007E4745 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		DE023C841C116B0F007E4745 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		DE023C861C1183E3007E4745 /* NSArray+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Swizzle.h"; sourceTree = "<group>"; };
+		DE023C871C1183E3007E4745 /* NSArray+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Swizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				DE023C7A1C1146E0007E4745 /* LaunchScreen.storyboard */,
 				DE023C7D1C1146E0007E4745 /* Info.plist */,
 				DE023C6C1C1146E0007E4745 /* Supporting Files */,
+				DE023C831C116B0F007E4745 /* UIViewController+Tracking.h */,
+				DE023C841C116B0F007E4745 /* UIViewController+Tracking.m */,
+				DE023C861C1183E3007E4745 /* NSArray+Swizzle.h */,
+				DE023C871C1183E3007E4745 /* NSArray+Swizzle.m */,
 			);
 			path = runtimeDemo;
 			sourceTree = "<group>";
@@ -149,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE023C881C1183E3007E4745 /* NSArray+Swizzle.m in Sources */,
 				DE023C741C1146E0007E4745 /* ViewController.m in Sources */,
+				DE023C851C116B0F007E4745 /* UIViewController+Tracking.m in Sources */,
 				DE023C711C1146E0007E4745 /* AppDelegate.m in Sources */,
 				DE023C6E1C1146E0007E4745 /* main.m in Sources */,
 			);

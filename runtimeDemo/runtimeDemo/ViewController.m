@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+Tracking.h"
+#import "NSArray+Swizzle.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -17,7 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+    NSLog(@"xxx");
+    NSArray *array = @[@"0",@"1",@"2",@"3"];
+    NSString *string = [array lastObject];
+    NSLog(@"TEST RESULT : %@",string);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
