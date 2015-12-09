@@ -34,6 +34,8 @@
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
 		DE86D78E1B9D75160016C36B /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE86D78D1B9D75160016C36B /* CustomView.xib */; };
 		DE8C6B8E1B9401640011DF6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6B8D1B9401640011DF6B /* MainViewController.m */; };
+		DEB2A4D41C1815990086A37F /* NSThreadUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEB2A4D51C1815990086A37F /* NSThreadUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		DEE67C681B7CDAB300F93DA7 /* StartUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C671B7CDAB300F93DA7 /* StartUIView.m */; };
 		DEE67C731B81C3CC00F93DA7 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C721B81C3CC00F93DA7 /* PictureViewController.m */; };
 		DEE67C961B81D1FA00F93DA7 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C761B81D1FA00F93DA7 /* MKAnnotationView+WebCache.m */; };
@@ -130,6 +132,9 @@
 		DE86D78D1B9D75160016C36B /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		DE8C6B8C1B9401640011DF6B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DE8C6B8D1B9401640011DF6B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DEB2A4D11C1815990086A37F /* NSThreadUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadUIViewController.h; sourceTree = "<group>"; };
+		DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadUIViewController.m; sourceTree = "<group>"; };
+		DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadUIViewController.xib; sourceTree = "<group>"; };
 		DEE67C661B7CDAB300F93DA7 /* StartUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUIView.h; sourceTree = "<group>"; };
 		DEE67C671B7CDAB300F93DA7 /* StartUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUIView.m; sourceTree = "<group>"; };
 		DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
@@ -342,13 +347,16 @@
 			name = DataTransmission;
 			sourceTree = "<group>";
 		};
-		DE8C6B8F1B9408640011DF6B /* GCDDemo */ = {
+		DE8C6B8F1B9408640011DF6B /* Multi_threadDemo */ = {
 			isa = PBXGroup;
 			children = (
 				DE6F48291B8DB8550073C9DF /* GCDViewController.h */,
 				DE6F482A1B8DB8550073C9DF /* GCDViewController.m */,
+				DEB2A4D11C1815990086A37F /* NSThreadUIViewController.h */,
+				DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */,
+				DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */,
 			);
-			name = GCDDemo;
+			name = Multi_threadDemo;
 			sourceTree = "<group>";
 		};
 		DEE67C5F1B7CD86F00F93DA7 /* ThirdLibrarys */ = {
@@ -388,7 +396,7 @@
 				DE5625F41C0DF544009DB0EB /* runtimeDemo */,
 				DE134DE21BA90FA500822751 /* TableVIewTest */,
 				DE134DD81BA56BD600822751 /* LifeCycleOfVC */,
-				DE8C6B8F1B9408640011DF6B /* GCDDemo */,
+				DE8C6B8F1B9408640011DF6B /* Multi_threadDemo */,
 				DE8C6B8B1B9194720011DF6B /* DataTransmission */,
 				DEE67C711B81C3CC00F93DA7 /* PictureViewController.h */,
 				DEE67C721B81C3CC00F93DA7 /* PictureViewController.m */,
@@ -622,6 +630,7 @@
 			files = (
 				DEE6D88A1B78E0B3002129F7 /* Main.storyboard in Resources */,
 				DE86D78E1B9D75160016C36B /* CustomView.xib in Resources */,
+				DEB2A4D51C1815990086A37F /* NSThreadUIViewController.xib in Resources */,
 				DEE6D88F1B78E0B3002129F7 /* LaunchScreen.xib in Resources */,
 				DEE6D88C1B78E0B3002129F7 /* Images.xcassets in Resources */,
 			);
@@ -650,6 +659,7 @@
 				DE134DDB1BA56C5E00822751 /* LifeCycleOfViewController.m in Sources */,
 				DEE67CA41B81D1FA00F93DA7 /* UIImageView+WebCache.m in Sources */,
 				DEE67CA21B81D1FA00F93DA7 /* UIImage+WebP.m in Sources */,
+				DEB2A4D41C1815990086A37F /* NSThreadUIViewController.m in Sources */,
 				DEE67C9E1B81D1FA00F93DA7 /* SDWebImagePrefetcher.m in Sources */,
 				DE5625F91C0DFAA3009DB0EB /* runtimeDemoViewController.m in Sources */,
 				DEE67C731B81C3CC00F93DA7 /* PictureViewController.m in Sources */,

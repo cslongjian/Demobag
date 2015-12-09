@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "GCDViewController.h"
 #import "runtimeDemoViewController.h"
+#import "NSThreadUIViewController.h"
 #import "CustomNav.h"
 
 @interface MainViewController ()
@@ -17,7 +18,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *runtimeButton;
-
 
 
 @end
@@ -102,5 +102,14 @@
     runtimeDemoViewController *rumtime = [[runtimeDemoViewController alloc] init];
     [self.navigationController pushViewController:rumtime animated:YES];
 }
+
+- (IBAction)gotoNSThreadDemo:(id)sender {
+    NSLog(@"gotoNSThreadDemo");
+    NSThreadUIViewController *NSThreadDemo = [[NSThreadUIViewController alloc]init];
+    [self.navigationController pushViewController:NSThreadDemo animated:YES];
+    
+    
+}
+
 
 @end
