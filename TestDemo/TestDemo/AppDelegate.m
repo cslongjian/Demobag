@@ -18,6 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"有storyboard版本走这里么？");
+    
+    NSLog(@" didFinishLaunchingWithOptions:完成初始化，进入程序");
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    NSLog(@" willFinishLaunchingWithOptions:将要完成初始化");
     return YES;
 }
 
@@ -57,5 +65,26 @@
 }
 
 //还有一种是内存低时候收到的警告，不过大多数情况都没去处理这里。
+
+
+
+//启动
+//2015-12-10 15:25:08.780 TestDemo[4311:384911]  willFinishLaunchingWithOptions:将要完成初始化
+//2015-12-10 15:25:08.780 TestDemo[4311:384911] 有storyboard版本走这里么？
+//2015-12-10 15:25:08.781 TestDemo[4311:384911]  didFinishLaunchingWithOptions:完成初始化，进入程序
+//2015-12-10 15:25:08.797 TestDemo[4311:384911] applicationDidBecomeActive---重新获取焦点(能够和用户交互)
+
+//点击HOME后
+//2015-12-10 15:26:09.367 TestDemo[4311:384911] applicationWillResignActive---失去焦点, 不可交互
+//2015-12-10 15:26:09.965 TestDemo[4311:384911] applicationDidEnterBackground---应用程序进入后台的时候调用
+
+//点击程序图标重新进入app
+//2015-12-10 15:26:15.977 TestDemo[4311:384911] applicationWillEnterForeground---应用程序即将进入前台的时候调用
+//2015-12-10 15:26:16.495 TestDemo[4311:384911] applicationDidBecomeActive---重新获取焦点(能够和用户交互)
+
+//双点击home键拖掉app
+//2015-12-10 15:26:19.489 TestDemo[4311:384911] applicationWillResignActive---失去焦点, 不可交互
+//2015-12-10 15:26:22.828 TestDemo[4311:384911] applicationDidEnterBackground---应用程序进入后台的时候调用
+//2015-12-10 15:26:22.832 TestDemo[4311:384911] applicationWillTerminate---应用程序即将被销毁的时候会调用该方法
 
 @end
