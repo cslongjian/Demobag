@@ -89,6 +89,13 @@
                                     <action selector="gotoNSThreadDemo:" destination="BMw-ik-SJ9" eventType="touchUpInside" id="epU-fy-OuP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jor-U6-cIe">
+                                <rect key="frame" x="187" y="156" width="67" height="30"/>
+                                <state key="normal" title="NSOption"/>
+                                <connections>
+                                    <action selector="gotoNSOptionDemo:" destination="BMw-ik-SJ9" eventType="touchUpInside" id="xMs-N9-hlh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -98,6 +105,7 @@
                             <constraint firstItem="fBd-mH-294" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="8" id="5r3-Fo-dB8"/>
                             <constraint firstItem="S4o-In-3Hu" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="5rV-Z8-U1G"/>
                             <constraint firstItem="5AZ-EB-7es" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="DJs-A2-Dn7"/>
+                            <constraint firstItem="Jor-U6-cIe" firstAttribute="leading" secondItem="fBd-mH-294" secondAttribute="trailing" constant="14" id="EnU-C3-5uQ"/>
                             <constraint firstItem="nQv-64-Ez6" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="MI2-5l-PHD"/>
                             <constraint firstItem="4mz-Dr-YQQ" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="XMg-iU-Lxm"/>
                             <constraint firstItem="BJC-c2-Fhw" firstAttribute="leading" secondItem="hq4-DW-dEv" secondAttribute="leading" constant="51" id="Y3f-ua-j19"/>
@@ -107,6 +115,7 @@
                             <constraint firstItem="5AZ-EB-7es" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="26" id="hPc-qc-CLD"/>
                             <constraint firstItem="S4o-In-3Hu" firstAttribute="top" secondItem="BJC-c2-Fhw" secondAttribute="bottom" constant="8" id="jjY-rO-WI3"/>
                             <constraint firstItem="fBd-mH-294" firstAttribute="leading" secondItem="S4o-In-3Hu" secondAttribute="trailing" constant="20" id="ldH-t5-pFS"/>
+                            <constraint firstItem="Jor-U6-cIe" firstAttribute="top" secondItem="kmK-Gy-RwI" secondAttribute="bottom" constant="92" id="pCs-VZ-AYS"/>
                             <constraint firstItem="d4m-5M-mTU" firstAttribute="top" secondItem="5AZ-EB-7es" secondAttribute="bottom" constant="36" id="uIO-Av-cJ3"/>
                         </constraints>
                         <variation key="default">
@@ -327,9 +336,23 @@
                     <view key="view" contentMode="scaleToFill" id="LFd-N3-x4m">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MPP-4t-zzY">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hRO-jD-v06" firstAttribute="top" secondItem="MPP-4t-zzY" secondAttribute="bottom" id="JUa-ou-PHE"/>
+                            <constraint firstItem="MPP-4t-zzY" firstAttribute="leading" secondItem="LFd-N3-x4m" secondAttribute="leading" id="OLs-30-L2M"/>
+                            <constraint firstItem="MPP-4t-zzY" firstAttribute="top" secondItem="diU-YI-YOz" secondAttribute="bottom" id="TEU-75-NH1"/>
+                            <constraint firstAttribute="trailing" secondItem="MPP-4t-zzY" secondAttribute="trailing" id="iQF-3z-nXl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Zo-mR-RMB"/>
+                    <connections>
+                        <outlet property="uiimage" destination="MPP-4t-zzY" id="uDd-Rq-PqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4x-ly-Uyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

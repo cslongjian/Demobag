@@ -34,6 +34,8 @@
 		DE6F482B1B8DB8550073C9DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F482A1B8DB8550073C9DF /* GCDViewController.m */; };
 		DE86D78E1B9D75160016C36B /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE86D78D1B9D75160016C36B /* CustomView.xib */; };
 		DE8C6B8E1B9401640011DF6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6B8D1B9401640011DF6B /* MainViewController.m */; };
+		DEA6EE951C23E34D00D41058 /* NSOperationQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6EE931C23E34D00D41058 /* NSOperationQueueViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEA6EE961C23E34D00D41058 /* NSOperationQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA6EE941C23E34D00D41058 /* NSOperationQueueViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		DEB2A4D41C1815990086A37F /* NSThreadUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */; settings = {ASSET_TAGS = (); }; };
 		DEB2A4D51C1815990086A37F /* NSThreadUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		DEE67C681B7CDAB300F93DA7 /* StartUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE67C671B7CDAB300F93DA7 /* StartUIView.m */; };
@@ -132,6 +134,9 @@
 		DE86D78D1B9D75160016C36B /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		DE8C6B8C1B9401640011DF6B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DE8C6B8D1B9401640011DF6B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DEA6EE921C23E34D00D41058 /* NSOperationQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationQueueViewController.h; sourceTree = "<group>"; };
+		DEA6EE931C23E34D00D41058 /* NSOperationQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationQueueViewController.m; sourceTree = "<group>"; };
+		DEA6EE941C23E34D00D41058 /* NSOperationQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOperationQueueViewController.xib; sourceTree = "<group>"; };
 		DEB2A4D11C1815990086A37F /* NSThreadUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadUIViewController.h; sourceTree = "<group>"; };
 		DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadUIViewController.m; sourceTree = "<group>"; };
 		DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadUIViewController.xib; sourceTree = "<group>"; };
@@ -355,6 +360,9 @@
 				DEB2A4D11C1815990086A37F /* NSThreadUIViewController.h */,
 				DEB2A4D21C1815990086A37F /* NSThreadUIViewController.m */,
 				DEB2A4D31C1815990086A37F /* NSThreadUIViewController.xib */,
+				DEA6EE921C23E34D00D41058 /* NSOperationQueueViewController.h */,
+				DEA6EE931C23E34D00D41058 /* NSOperationQueueViewController.m */,
+				DEA6EE941C23E34D00D41058 /* NSOperationQueueViewController.xib */,
 			);
 			name = Multi_threadDemo;
 			sourceTree = "<group>";
@@ -629,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE6D88A1B78E0B3002129F7 /* Main.storyboard in Resources */,
+				DEA6EE961C23E34D00D41058 /* NSOperationQueueViewController.xib in Resources */,
 				DE86D78E1B9D75160016C36B /* CustomView.xib in Resources */,
 				DEB2A4D51C1815990086A37F /* NSThreadUIViewController.xib in Resources */,
 				DEE6D88F1B78E0B3002129F7 /* LaunchScreen.xib in Resources */,
@@ -692,6 +701,7 @@
 				DE6F48251B85BBA90073C9DF /* DatepickerViewController.m in Sources */,
 				DEE67CA01B81D1FA00F93DA7 /* UIImage+GIF.m in Sources */,
 				DEE67C991B81D1FA00F93DA7 /* SDWebImageCompat.m in Sources */,
+				DEA6EE951C23E34D00D41058 /* NSOperationQueueViewController.m in Sources */,
 				DE134DC81BA4295A00822751 /* AFURLConnectionOperation.m in Sources */,
 				DEE67C971B81D1FA00F93DA7 /* NSData+ImageContentType.m in Sources */,
 				DE6F48281B8CBF650073C9DF /* PassValueViewController.m in Sources */,

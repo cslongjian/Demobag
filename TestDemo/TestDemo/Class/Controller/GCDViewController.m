@@ -27,7 +27,29 @@
 //    4并行执行任务
 //    [self parallelExecutiveMission];
     
-    [self testMission];
+//    [self testMission];
+    //多任务组合
+//    [self groupTask];
+//    
+//    //中间插入任务使用
+//    [self barrierTask];
+    
+    //重复执行
+    [self replayTask];
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSLog(@"------当前线程--%@", [NSThread mainThread]);
+//
+//        NSURL * url = [NSURL URLWithString:@"http://i2.hoopchina.com.cn/blogfile/201410/14/BbsImg141327602396636_480*310.jpg"];
+//        NSData * data = [[NSData alloc]initWithContentsOfURL:url];
+//        UIImage *image = [[UIImage alloc]initWithData:data];
+//        if (data != nil) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.uiimage.image = image;
+//                NSLog(@"-----内部当前线程--%@", [NSThread mainThread]);
+//            });
+//        }  
+//    });
     
 }
 
@@ -135,6 +157,8 @@
     
 }
 
+
+
 //一条题目判定执行顺序
 -(void)testMission
 {
@@ -158,5 +182,62 @@
 //    第一次执行 142
 //       出现412
 }
+
+//任务组合的使用  dispatch_group_async可以实现监听一组任务是否完成，完成后得到通知执行其他的操作。这个方法很有用，比如你执行三个下载任务，当三个任务都下载完成后你才通知界面说完成的了
+- (void)groupTask
+{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"group1");
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"group2");
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:3];
+        NSLog(@"group3");
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"updateUi");
+    });
+}
+
+//中间插入任务的使用 dispatch_barrier_async是在前面的任务执行结束后它才执行，而且它后面的任务等它执行完成之后才会执行
+-  (void)barrierTask
+{
+    dispatch_queue_t queue = dispatch_queue_create("barrierTask", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"dispatch_async1");
+    });
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:4];
+        NSLog(@"dispatch_async2");
+    });
+    dispatch_barrier_async(queue, ^{
+        NSLog(@"dispatch_barrier_async");
+        [NSThread sleepForTimeInterval:4];
+        
+    });
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"dispatch_async3");  
+    });
+}
+
+// 重复执行
+- (void)replayTask
+{
+//    重复执行如果放到主线程中会卡死。。
+    dispatch_apply(5, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
+        // 执行5次
+        NSLog(@"重复执行任务----");
+        
+    });
+}
+
 
 @end

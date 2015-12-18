@@ -10,6 +10,7 @@
 #import "GCDViewController.h"
 #import "runtimeDemoViewController.h"
 #import "NSThreadUIViewController.h"
+#import "NSOperationQueueViewController.h"
 #import "CustomNav.h"
 
 @interface MainViewController ()
@@ -109,6 +110,11 @@
     [self.navigationController pushViewController:NSThreadDemo animated:YES];
     
     
+}
+- (IBAction)gotoNSOptionDemo:(id)sender {
+    NSLog(@"gotoNSThreadDemo");
+    NSOperationQueueViewController *NSOptiondemo = [[NSOperationQueueViewController alloc]init];
+    [self.navigationController pushViewController:NSOptiondemo animated:YES];
 }
 
 
