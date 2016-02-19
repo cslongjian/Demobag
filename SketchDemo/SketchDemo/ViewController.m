@@ -10,6 +10,10 @@
 #import "CustomVIew.h"
 
 @interface ViewController ()
+{
+    NSMutableArray *testmemory;
+    CustomVIew *test;
+}
 
 @end
 
@@ -18,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    testmemory = [NSMutableArray array];
     
     CustomVIew *myview = [[CustomVIew alloc]initWithFrame:CGRectMake(0, 0, 110, 110)];
     myview.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
@@ -32,6 +38,25 @@
         }];
     });
     
+    NSDate *scheduledTime = [NSDate dateWithTimeIntervalSinceNow:1.0];
+    NSString *customUserObject = @"To demo userInfo";
+    NSTimer *timer = [[NSTimer alloc] initWithFireDate:scheduledTime
+                                              interval:1
+                                                target:self
+                                              selector:@selector(task:)
+                                              userInfo:customUserObject
+                                               repeats:YES];
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    [runLoop addTimer:timer forMode:NSDefaultRunLoopMode];
+}
+
+-(void)task:(id)sender{
+    NSTimer *localTimer = (NSTimer *)sender;
+    NSLog(@"Schedule task has executed with this user info: %@", [localTimer  userInfo]);
+    for (int i = 0 ; i<1000000; i++) {
+        test = [[CustomVIew alloc]initWithFrame:CGRectMake(0, 0, 110, 110)];
+         [testmemory addObject:test];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
