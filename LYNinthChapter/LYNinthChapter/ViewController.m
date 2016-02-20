@@ -43,6 +43,8 @@
 
 - (void)viewDidLoad {
       NSLog(@"viewDidLoad方法被调用");
+    //[NSThread sleepForTimeInterval:3.0];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UILabel *text2 = (UILabel *)[self.view viewWithTag:1];

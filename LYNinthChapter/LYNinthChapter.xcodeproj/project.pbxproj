@@ -12,7 +12,6 @@
 		DE133F831C77678200071BAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE133F821C77678200071BAC /* ViewController.m */; };
 		DE133F861C77678200071BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE133F841C77678200071BAC /* Main.storyboard */; };
 		DE133F881C77678200071BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE133F871C77678200071BAC /* Assets.xcassets */; };
-		DE133F8B1C77678200071BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE133F891C77678200071BAC /* LaunchScreen.storyboard */; };
 		DE133F941C7858A100071BAC /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE133F931C7858A100071BAC /* CustomView.m */; };
 		DE133F961C78598800071BAC /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE133F951C78598800071BAC /* CustomView.xib */; };
 		DE133F991C78ABF300071BAC /* LYCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE133F981C78ABF300071BAC /* LYCustomView.m */; };
@@ -27,7 +26,6 @@
 		DE133F821C77678200071BAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DE133F851C77678200071BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE133F871C77678200071BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE133F8A1C77678200071BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE133F8C1C77678200071BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE133F921C7858A100071BAC /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		DE133F931C7858A100071BAC /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				DE133F821C77678200071BAC /* ViewController.m */,
 				DE133F841C77678200071BAC /* Main.storyboard */,
 				DE133F871C77678200071BAC /* Assets.xcassets */,
-				DE133F891C77678200071BAC /* LaunchScreen.storyboard */,
 				DE133F8C1C77678200071BAC /* Info.plist */,
 				DE133F7B1C77678200071BAC /* Supporting Files */,
 				DE133F921C7858A100071BAC /* CustomView.h */,
@@ -149,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE133F8B1C77678200071BAC /* LaunchScreen.storyboard in Resources */,
 				DE133F961C78598800071BAC /* CustomView.xib in Resources */,
 				DE133F881C77678200071BAC /* Assets.xcassets in Resources */,
 				DE133F861C77678200071BAC /* Main.storyboard in Resources */,
@@ -180,14 +176,6 @@
 				DE133F851C77678200071BAC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE133F891C77678200071BAC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE133F8A1C77678200071BAC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LYNinthChapter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenlongjian.LYNinthChapter;
@@ -288,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LYNinthChapter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenlongjian.LYNinthChapter;
