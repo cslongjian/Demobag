@@ -34,6 +34,8 @@
     
      self.navigationItem.rightBarButtonItem = AddBtnItem;
     
+    //我就是来测试git的
+    
 }
 
 - (void)didReceiveMemoryWarning {
