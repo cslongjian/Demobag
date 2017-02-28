@@ -24,6 +24,9 @@
     t.textAlignment = UITextAlignmentCenter;
     t.text = @"未完成";
     self.navigationItem.titleView = t;
+    
+    //我是分支的提交。。
+    
 }
 
 - (void)didReceiveMemoryWarning {
