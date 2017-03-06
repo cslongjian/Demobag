@@ -10,9 +10,9 @@
 		259809EF1BDFC8EE0001464B /* Hydrogen.m in Sources */ = {isa = PBXBuildFile; fileRef = 259809EE1BDFC8EE0001464B /* Hydrogen.m */; };
 		259809F21BDFCB1F0001464B /* HydrogenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 259809F11BDFCB1F0001464B /* HydrogenHelper.m */; };
 		DE36A4C11BDE5E620097619D /* Atom+Nuclear.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36A4C01BDE5E620097619D /* Atom+Nuclear.m */; };
-		DE4B07EA1BF4ED4A0018892B /* OrderEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07E91BF4ED4A0018892B /* OrderEntry.m */; settings = {ASSET_TAGS = (); }; };
-		DE4B07ED1BF4ED590018892B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07EC1BF4ED590018892B /* Address.m */; settings = {ASSET_TAGS = (); }; };
-		DE4B07F01BF4ED6A0018892B /* OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07EF1BF4ED6A0018892B /* OrderItem.m */; settings = {ASSET_TAGS = (); }; };
+		DE4B07EA1BF4ED4A0018892B /* OrderEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07E91BF4ED4A0018892B /* OrderEntry.m */; };
+		DE4B07ED1BF4ED590018892B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07EC1BF4ED590018892B /* Address.m */; };
+		DE4B07F01BF4ED6A0018892B /* OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4B07EF1BF4ED6A0018892B /* OrderItem.m */; };
 		DEA625571BDB752B00546B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA625561BDB752B00546B0B /* main.m */; };
 		DEA625601BDB77AF00546B0B /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6255F1BDB77AF00546B0B /* Atom.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +63,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081C0E631E690D2300D2E1DD /* kvo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = kvo;
+			sourceTree = "<group>";
+		};
 		259809EC1BDFC8D30001464B /* third */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +123,7 @@
 		DEA625551BDB752B00546B0B /* OC_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				081C0E631E690D2300D2E1DD /* kvo */,
 				DE1ED40A1BFC6825007C115C /* five */,
 				DE4B07E71BF4ECD00018892B /* four */,
 				259809EC1BDFC8D30001464B /* third */,

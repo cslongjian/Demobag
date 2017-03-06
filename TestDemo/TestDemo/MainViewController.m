@@ -11,7 +11,12 @@
 #import "runtimeDemoViewController.h"
 #import "NSThreadUIViewController.h"
 #import "NSOperationQueueViewController.h"
+#import "MasonryTestViewController.h"
+#import "kvoObserverModel.h"
+#import "kvoObservertorModel.h"
 #import "CustomNav.h"
+
+#import "Masonry.h"
 
 @interface MainViewController ()
 {
@@ -19,6 +24,11 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *runtimeButton;
+
+@property(nonatomic,strong) kvoObserverModel *model;
+
+@property(nonatomic,strong) kvoObservertorModel *acceptmodel;
+
 
 
 @end
@@ -40,6 +50,18 @@
 //    self.navigationController.navigationBar.translucent = NO;
     
     [self.runtimeButton addTarget:self action:@selector(gotoRuntimeDemo) forControlEvents:UIControlEventTouchUpInside];
+    
+//      [self.runtimeButton addTarget:self action:@selector(testKVO) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    _model = [kvoObserverModel new];
+    _model.hight = @"旧对象";
+    
+    _acceptmodel = [kvoObservertorModel new];
+    
+    [_model addObserver:_acceptmodel forKeyPath:@"hight" options:NSKeyValueObservingOptionNew context:nil];
+    
     
 }
 
@@ -99,10 +121,21 @@
 //
 - (void)gotoRuntimeDemo
 {
-    NSLog(@"gotoRuntimeDemo");
-    runtimeDemoViewController *rumtime = [[runtimeDemoViewController alloc] init];
+//    NSLog(@"gotoRuntimeDemo");
+//    runtimeDemoViewController *rumtime = [[runtimeDemoViewController alloc] init];
+//    [self.navigationController pushViewController:rumtime animated:YES];
+    
+    NSLog(@"gotoMasonryDemo");
+    MasonryTestViewController *rumtime = [[MasonryTestViewController alloc] init];
     [self.navigationController pushViewController:rumtime animated:YES];
+    
 }
+
+- (void)testKVO
+{
+    _model.hight = @"新对象";
+}
+
 
 - (IBAction)gotoNSThreadDemo:(id)sender {
     NSLog(@"gotoNSThreadDemo");

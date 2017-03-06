@@ -1,50 +1,43 @@
 //
-//  runtimeDemoViewController.m
+//  BaseViewController.m
 //  TestDemo
 //
-//  Created by Supwin_mbp002 on 15/12/1.
-//  Copyright © 2015年 chenlongjian. All rights reserved.
+//  Created by hzl on 17/3/6.
+//  Copyright © 2017年 chenlongjian. All rights reserved.
 //
 
-#import "runtimeDemoViewController.h"
-#import "CustomNav.h"
+#import "BaseViewController.h"
 #import "MasnoryNavView.h"
 #import "Masonry.h"
 
-@interface runtimeDemoViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation runtimeDemoViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"runtimeDemo";
     
     self.navigationController.navigationBar.hidden = YES;
     
-    MasnoryNavView *nav = [[MasnoryNavView alloc]init];
-    nav.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:nav];
+    _masonryNavView = [MasnoryNavView new];
+    _masonryNavView.backgroundColor = [UIColor blueColor];
     
-    [nav mas_makeConstraints:^(MASConstraintMaker *make) {
-        UIView *superview = nav.superview;
+    [self.view addSubview:_masonryNavView];
+    
+    [_masonryNavView mas_makeConstraints:^(MASConstraintMaker *make) {
+        UIView *superview = _masonryNavView.superview;
         make.left.equalTo(superview);
         make.right.equalTo(superview);
         make.top.equalTo(superview);
         make.width.mas_equalTo(superview);
-        make.height.mas_equalTo(68);
+        make.height.mas_equalTo(64);
+        
     }];
     
-    [nav.leftButton addTarget:self action:@selector(returnToFrom) forControlEvents:UIControlEventTouchUpInside];
     
-    
-}
-
--(void)returnToFrom
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
